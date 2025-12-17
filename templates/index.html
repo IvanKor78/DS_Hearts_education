@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ML Prediction Service</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .container { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Предсказание риска сердечного приступа</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="file">Выберите файл (.xlsx или .csv):</label><br><br>
+            <input type="file" id="file" name="file" required><br><br>
+            <button type="submit">Получить предсказания</button>
+        </form>
+    </div>
+</body>
+</html>
