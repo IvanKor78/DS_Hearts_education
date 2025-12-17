@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pandas
+catboost
+python-multipart
+openpyxl
+jinja2
